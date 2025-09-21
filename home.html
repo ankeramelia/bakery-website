@@ -6,35 +6,52 @@
     <title>Hearth & Crumb</title>
     <link rel="icon" href="Image Assets/Logo.jpg" type="img/jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <section id="hero">
-    <h1>Hearth & Crumb</h1>
-    <p>Bake with heart. Serve with soul. Share with love.</p>
-     <video autoplay muted loop playsinline class="hero-video">
-    <source src="Video Assets/Bread baking.mp4" type="video/mp4" >
-    Your browser does not support the video tag.
-  </video>
-    <a href="#shop" class="btn">Shop Now</a>
-        <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
-      </ul>
-    </nav>
+    <section class="hero">
+        <div class="hero-banner">
+                        <h1>Hearth & Crumb</h1>
+                        <p class="slogan">Bake with heart. Serve with soul. Share with love.</p>
+                        <nav>
+                            <img src="Image Assets/logo white.png" class="logo" alt="line drawing of a bread">
+                           <ul>
+                                <li><a href="#home">Home</a></li>
+                                 <li><a href="#shop">Shop</a></li>
+                          </ul>
+                        </nav>
+        </div>
+        <video autoplay muted loop playsinline class="hero-video">
+        <source src="Video Assets/Baked bread.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+        </video>
+        <a href="#shop" class="shop btn">Shop Now</a>
     </section>
 
-    <section class="welcome"></section> <!-- Welcome Section-->
-        <h2>Welcome to hearth & Crumb</h2>
-        <p>At Hearth & Crumb, every bite is meant to feel like home. Inspired by the comforting aroma of freshly baked bread and the sweetness of shared moments, we craft treats that bring people together.
-        <br>
-        From golden loaves to delicate cupcakes, each creation is made with passion, patience, and the finest ingredients — blending traditional techniques with a touch of modern indulgence.
-        <br>
-        Whether you’re here for a buttery croissant, a decadent slice of cake, or just good coffee and company, our hearth is warm, our doors open, and our joy is baked into every crumb.
-        </p>
-        <img src="Image Assets/Welcome.jpg" alt="Lemon Meringue" height="200px">
+
+
+    <section class="welcome"> <!-- Welcome Section original-->
+        <table class="welcome-table">
+            <tr>
+                <td>
+                    <h2>Welcome to hearth & Crumb</h2>
+                    <p>At Hearth & Crumb, every bite is meant to feel like home. Inspired by the comforting aroma of freshly baked bread and the sweetness of shared moments, we craft treats that bring people together.
+                    <br><br>
+                    From golden loaves to delicate cupcakes, each creation is made with passion, patience, and the finest ingredients — blending traditional techniques with a touch of modern indulgence.
+                    <br><br>
+                    Whether you’re here for a buttery croissant, a decadent slice of cake, or just good coffee and company, our hearth is warm, our doors open, and our joy is baked into every crumb.
+                    </p>
+                </td>
+                <td>
+                    <img class="welcome-img" src="Image Assets/Welcome.jpg" alt="Lemon Meringue" height="200px">
+                </td>
+            </tr>
+        </table>
+    </section>
 
     <section class="philosophy">
         <h2>Philosophy</h2>
@@ -42,92 +59,133 @@
 
         <!-- Philisophy image and text layout-->
 
-            <div class="philosophy-grid">     
-
-             <!-- Craftmanship -->
-             <div class="philosophy">
-                <img src="Image Assets/PhilosophyOne.jpg" alt="Decorated Cake" height="200px">
-                <div class="philosophy-text">
-                    <h3>Craftsmanship First</h3>
-                    <p>We take time to perfect every recipe, honouring traditional baking techniques while embracing innovation where it enhances flavour and quality. </p>
-                </div>
-             </div>
-
-             <!-- Sustainability -->
-             <div class="philosophy-reverse">
-                 <div class="philosophy-text">
-                     <h3>Sustainability Matters</h3>
-                     <p>From sourcing ethically produced ingredients to minimising waste through our zero-waste baking initiative, we’re committed to doing better for the planet and our community. </p>
-                 </div>
-                 <img src="Image Assets/PhilosophyTwo.jpg" alt="Baked Bread" height="200px">
-             </div>
-
-             <!-- Heart -->
-             <div class="philosophy">
-                    <img src="Image Assets/PhilosophyThree.jpg" alt="Pecan Cookies" height="200px">
-                    <div class="philosophy-text">
-                      <h3>Baking with Heart</h3>
-                      <p>Our bakers pour their passion into every loaf, pastry, and cake. We believe that when something is made with care and intention, you can taste the difference. </p>
+            <div class="philosophy-grid">
+ 
+                    
+                    <!-- Craftmanship -->
+                    <div class="philosophy">
+                        <img src="Image Assets/PhilosophyOne.jpg" alt="Decorated Cake" height="200px">
+                        <div class="philosophy-text">
+                            <h3>Craftsmanship First</h3>
+                            <p>We take time to perfect every recipe, honouring traditional baking techniques while embracing innovation where it enhances flavour and quality. </p>
+                        </div>
                     </div>
-             </div>
 
-             <!-- Community-->
-             <div class="philosophy-reverse">
-                    <div class="philosophy-text">
-                        <h3>Community at the Core</h3>
-                        <p>We’re proud to partner with local suppliers, support small-scale farmers, and donate surplus goods to those in need. </p>
+                    <!-- Sustainability -->
+                    <div class="philosophy-reverse">
+                        <div class="philosophy-text">
+                            <h3>Sustainability Matters</h3>
+                            <p>From sourcing ethically produced ingredients to minimising waste through our zero-waste baking initiative, we’re committed to doing better for the planet and our community. </p>
+                        </div>
+                        <img src="Image Assets/PhilosophyTwo.jpg" alt="Baked Bread" height="200px">
                     </div>
-                    <img src="Image Assets/PhilosophyFour.jpg" alt="Crunchie Slices" height="200px">
-             </div>
+
+                    <!-- Heart -->
+                    <div class="philosophy">
+                            <img src="Image Assets/PhilosophyThree.jpg" alt="Pecan Cookies" height="200px">
+                            <div class="philosophy-text">
+                            <h3>Baking with Heart</h3>
+                            <p>Our bakers pour their passion into every loaf, pastry, and cake. We believe that when something is made with care and intention, you can taste the difference. </p>
+                            </div>
+                    </div>
+
+                    <!-- Community-->
+                    <div class="philosophy-reverse">
+                            <div class="philosophy-text">
+                                <h3>Community at the Core</h3>
+                                <p>We’re proud to partner with local suppliers, support small-scale farmers, and donate surplus goods to those in need. </p>
+                            </div>
+                            <img src="Image Assets/PhilosophyFour.jpg" alt="Crunchie Slices" height="200px">
+                    </div>
 
             </div>
 
     </section>
 
-    <section class="value">
-        <h2>What we value</h2>
-        <p>At Hearth & Crumb, every detail — every aroma, every swirl of frosting, every little crumb — is a reflection of who we are and what we value.  </p>
-        
-        <!-- What we value images, wording and link-->
-        <img src="Image Assets/Appetizers.jpg" alt="Image of an appetizer" height="200px">
-        <p>Mouthwatering appetizers</p>
-        <img src="Image Assets/WholesomeMains.jpg" alt="Image of bread" height="200px">
-        <p>Wholesome Mains</p>
-        <img src="Image Assets/SweetEndings.jpg" alt="Image of cupcakes" height="200px">
-        <p>Sweet endings</p>
+    <section class="value"> <!-- Two tables, one for text left and one for images and text right.-->
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><h2>What we value</h2></td>
+                        </tr>
+                        <tr>
+                            <td><p>At Hearth & Crumb, every detail — every aroma, every swirl of frosting, every little crumb — is a reflection of who we are and what we value.  </p></td>
+                        </tr> 
+                    </table>
+                </td>
+                <td>
+                    <table class="value table">
+                        <tr>
+                            <td>
+                                <!-- What we value images, top row-->
+                                <img src="Image Assets/Appetizers.jpg" alt="Image of an appetizer" height="200px">
+                            </td>
+                            <td>
+                                <img src="Image Assets/WholesomeMains.jpg" alt="Image of bread" height="200px">
+                            </td>
+                            <td>
+                                <img src="Image Assets/SweetEndings.jpg" alt="Image of cupcakes" height="200px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>    
+                            <!-- What we value text, bottom row-->
+                            <p>Mouthwatering appetizers</p>
+                            </td>
+                            <td>
+                            <p>Wholesome Mains</p>
+                            </td>
+                            <td>
+                            <p>Sweet endings</p>
+                            </td>
+                        </tr>    
+                    </table>
+                </td>
+            </tr>
+         </table>
         <!-- Not btn, just shop word link-->
         <a href="shop.html" title="Shop"><u>SHOP</u></a> 
     </section>
 
 </body>
 
-<footer>
-    <img src="Image Assets/Footer.jpg" height="200px">
-    <div class="contact"> <!--Newsletter Form Section-->
-        <h3>JOIN OUR NEWSLETTER</h3>
-        <form action="malito" method="post">
-            <input type="email" placeholder="Email" id="email" required>
+<footer style="background-color: #281F1D;">
+    <table>
+        <tr>
+            <td>
+             <img src="Image Assets/Footer.jpg" alt="Baked Items on Countertop" height="500px">
+            </td>
+            <td>
+                <div class="contact" style="color: #E9E9E7;"> <!--Newsletter Form Section-->
+                <h3>JOIN OUR NEWSLETTER</h3>
+                 <form action="malito" method="post">
+                    <input type="email" placeholder="Email" id="email" required>
 
-            <input type="submit">
-        </form>
-    </div>
-    <div class="contactinfo"><!--Contact Us Information Section-->
-        <h3>CONTACT US</h3>
-        <P>PHONE NUMBER</P>
-        <p>(123) 456 7891</p>
-        <br><br>
-        <p>EMAIL ADDRESS</p>
-        <p>admin@hearthandcrumb.com</p>
-        <br><br>
-        <p>RESTAURANT</p>
-        <p>123 Anywhere St, Any City, 1298</p>
-        <br>
-        <br>
-    </div>
-    <div class="socialicons"> <!--Social Icons section-->
-
-    </div>
-    <div class="allrights"> <!--All rights reserved section-->
+                    <input type="submit">
+                 </form>
+                </div>
+            
+                <div class="contactinfo" style="color: #E9E9E7;"><!--Contact Us Information Section-->
+                  <h3>CONTACT US</h3>
+                  <P>PHONE NUMBER</P>
+                  <p>(123) 456 7891</p>
+                  <br><br>
+                  <p>EMAIL ADDRESS</p>
+                  <p>admin@hearthandcrumb.com</p>
+                  <br><br>
+                  <p>RESTAURANT</p>
+                  <p>123 Anywhere St, Any City, 1298</p>
+                  <br>
+                  <br>
+                </div>
+                <div class="socialicons"> <!--Social Icons section-->
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div style="background-color: #E9E9E7;" class="allrights"> <!--All rights reserved section-->
         &copy; ALL RIGHTS RESERVED, HEARTH AND CRUMB | WEBSITE DESIGNED BY AMELIA ANKER
     </div>
 </footer>
