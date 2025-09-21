@@ -31,7 +31,7 @@ h1{
 }
 
 .hero-banner{
-  height: 120px;
+  height: 140px;
   background-color: #281F1D;
   position: absolute;
   right: 0;
@@ -60,23 +60,43 @@ h1{
   }
 }
 
-nav{
-  width: 100%;
+nav {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding-right: 70px;
+  padding-top: 80px;
 }
 
-nav ul li{
+nav ul {
+  display: flex;
+}
+
+nav ul li {
   list-style: none;
-  display: inline-block;
-  margin-left: 40px;
-  padding-left: 20px;
-  top: 0;
-  color: #E9E9E7;
+  justify-content: space-between;
+  padding-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #E9E9E7; 
+  font-family: "Bebas Neue";
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  text-decoration: underline; /* Adds an underline when the link is actively being clicked */
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Welcome Section Specific*/
@@ -129,6 +149,7 @@ nav ul li{
 }
 
 body{
+  font-size: 1.2em;
   background-color: #E9E9E7;
 }
 /*Footer Section Specific*/
