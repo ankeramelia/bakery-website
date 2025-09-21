@@ -103,8 +103,7 @@ a:hover {
 
 .welcome{
   margin-top: 700px;
-  padding: 50px;
-  height: auto;
+  min-height: 800px;
 }
 
 .welcome-img {
@@ -114,12 +113,16 @@ a:hover {
   border-style: solid;
   border-color:#281F1D;
   padding: 10px;
+  margin: 40px;
 }
 
 .welcome-table{
-  table-layout:auto;
-  width: 100%;
-  margin: auto;
+    min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 60px;
 }
 
 /*Philosophy Section Specific*/
@@ -151,5 +154,6 @@ a:hover {
 body{
   font-size: 1.2em;
   background-color: #E9E9E7;
+
 }
 /*Footer Section Specific*/
