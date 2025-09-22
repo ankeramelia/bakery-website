@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Hearth & Crumb" content="width=device-width, initial-scale=1.0">
-    <title>Hearth & Crumb</title>
+    <title>Hearth & Crumb Bakery</title>
     <link rel="icon" href="Image Assets/Logo.jpg" type="img/jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,62 +12,67 @@
 </head>
 
 <body>
-    <section class="hero">
-        <div class="hero-banner">
-                        <h1>Hearth & Crumb</h1>
-                        <p class="slogan">Bake with heart. Serve with soul. Share with love.</p>
-                            <img src="Image Assets/logo white.png" class="logo" alt="line drawing of a bread">
-                        <nav>                            
-                           <ul>
-                                <li><a href="home.html">Home</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                          </ul>
-                        </nav>
-        </div>
-        <video autoplay muted loop playsinline class="hero-video">
+<!--Hero Section-->
+<section> 
+    <div class="hero-banner">
+        <h1>Hearth & Crumb</h1>
+        <p class="slogan">Bake with heart. Serve with soul. Share with love.</p>
+        <img src="Image Assets/logo white.png" class="logo" alt="line drawing of a bread">
+        <nav>                            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+    <video autoplay muted loop playsinline class="hero-video">
         <source src="Video Assets/Bread baking.mp4" type="video/mp4" >
         Your browser does not support the video tag.
-        </video>
-    </section>
+    </video>
+</section>
+<!-- Bread for Better Section-->
+  <section class="shop-intro">
+    <h2>Bread for Better</h2>
+    <p>For every loaf sold, a portion is donated to shelters and feeding programs.</p>
+  </section>
 
-</body>
-
-<footer style="background-color: #281F1D;">
-    <table>
-        <tr>
-            <td>
-             <img src="Image Assets/Footer.jpg" alt="Baked Items on Countertop" height="500px">
-            </td>
-            <td>
-                <div class="contact" style="color: #E9E9E7;"> <!--Newsletter Form Section-->
-                <h3>JOIN OUR NEWSLETTER</h3>
-                 <form action="malito" method="post">
-                    <input type="email" placeholder="Email" id="email" required>
-
-                    <input type="submit">
-                 </form>
-                </div>
-            
-                <div class="contactinfo" style="color: #E9E9E7;"><!--Contact Us Information Section-->
-                  <h3>CONTACT US</h3>
-                  <P>PHONE NUMBER</P>
-                  <p>(123) 456 7891</p>
-                  <br><br>
-                  <p>EMAIL ADDRESS</p>
-                  <p>admin@hearthandcrumb.com</p>
-                  <br><br>
-                  <p>RESTAURANT</p>
-                  <p>123 Anywhere St, Any City, 1298</p>
-                  <br>
-                  <br>
-                </div>
-                <div class="socialicons"> <!--Social Icons section-->
-                </div>
-            </td>
-        </tr>
-    </table>
-    <div style="background-color: #E9E9E7;" class="allrights"> <!--All rights reserved section-->
-        &copy; ALL RIGHTS RESERVED, HEARTH AND CRUMB | WEBSITE DESIGNED BY AMELIA ANKER
+<!-- Products Section -->
+  <section class="products">
+    <h2>Cakes & Desserts</h2>
+    <div class="grid">
+      <div class="product"><h3>Velvet Hearth Cake</h3><p>R420</p></div>
+      <div class="product"><h3>Pastel Bloom Cupcakes (6)</h3><p>R180</p></div>
+      <div class="product"><h3>Lemon Meringue Tart</h3><p>R95</p></div>
     </div>
-</footer>
+
+    <h2>Pastries & Breads</h2>
+    <div class="grid">
+      <div class="product"><h3>Classic Butter Croissant</h3><p>R38</p></div>
+      <div class="product"><h3>Almond Pain au Chocolat</h3><p>R52</p></div>
+      <div class="product"><h3>Artisan Sourdough Loaf</h3><p>R85</p></div>
+    </div>
+
+    <h2>Cookies & Treats</h2>
+    <div class="grid">
+      <div class="product"><h3>Triple Chocolate Chip Cookies (4)</h3><p>R65</p></div>
+      <div class="product"><h3>Raspberry Macaron Selection (8)</h3><p>R150</p></div>
+      <div class="product"><h3>Caramel Pecan Brownies</h3><p>R48</p></div>
+    </div>
+  </section>
+<!-- Hearth Section-->
+</body>
+<!-- Footer Section-->
+  <footer class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: order@hearthandcrumb.co.za</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>123 Anywhere St, Any City</p>
+    <form>
+      <label for="newsletter">Join our Newsletter:</label>
+      <input type="email" id="newsletter" placeholder="Email">
+      <button type="submit">Send</button>
+    </form>
+    <p class="copyright">© All rights reserved, Hearth & Crumb | Designed by Amelia Anker</p>
+  </footer>
+</body>
 </html>
