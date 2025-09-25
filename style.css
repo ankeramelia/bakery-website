@@ -333,8 +333,62 @@ body{
 
 /*SHOP SIDE SPECIFIC*/
 
+/*Bread for better*/
 
+.b4bcontainer{
+  display: flex;
+  background-color:#E9E9E7;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2% 5%;
+}
 
+.breadforbetter{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: center;
+}
+
+.breadforbetter-img {
+  height: auto;
+  width: 100%;
+  border: 2px;
+  border-style: solid;
+  border-color:#281F1D;
+  padding: 10px;
+}
+
+.breadforbetter-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Cakes & Desserts*/
+
+.puddings, .treats{
+  display: grid;
+  background-color: #281F1D;
+  color:#E9E9E7;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  
+}
+
+.puddings-grid{
+
+}
+
+.products-img{
+  width: 300px;
+}
 
 /*Footer Section Specific*/
 
