@@ -11,30 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<header>
+
 <!--Hero Section-->
-<section> 
-    <div class="hero-banner">
-        <h1>Hearth & Crumb</h1>
-        <p class="slogan">Bake with heart. Serve with soul. Share with love.</p>
-        <img src="Image Assets/logo white.png" class="logo" alt="line drawing of a bread">
-        <nav>                            
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-            </ul>
-        </nav>
-    </div>
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="Video Assets/Bread baking.mp4" type="video/mp4" >
-        Your browser does not support the video tag.
-    </video>
-</section>
-<!-- Bread for Better Section-->
-  <section class="shop-intro">
-    <h2>Bread for Better</h2>
-    <p>For every loaf sold, a portion is donated to shelters and feeding programs.</p>
-  </section>
+<div class="hero-banner">
+    <a href="index.html" class="header-link"><h1>Hearth & Crumb</h1></a>
+    <p class="slogan">Bake with heart. Serve with soul. Share with love.</p>
+    <img src="Image Assets/logo white.png" class="logo" alt="line drawing of a bread">
+    <nav>                            
+        <ul>
+            <li><a href="index.html" title="Take me home">Home</a></li>
+            <li><a href="shop.html" title="Take me to the shop">Shop</a></li>
+        </ul>
+    </nav>
+</div>
+<video autoplay muted loop playsinline class="hero-video">
+<source src="Video Assets/Baked bread.mp4" type="video/mp4" >
+Your browser does not support the video tag.
+</video>
+
+</header>
+
+<body>
+
 
 <!-- Products Section -->
   <section class="products">
@@ -61,18 +60,61 @@
   </section>
 <!-- Hearth Section-->
 </body>
-<!-- Footer Section-->
-  <footer class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: order@hearthandcrumb.co.za</p>
-    <p>Phone: (123) 456-7890</p>
-    <p>123 Anywhere St, Any City</p>
-    <form>
-      <label for="newsletter">Join our Newsletter:</label>
-      <input type="email" id="newsletter" placeholder="Email">
-      <button type="submit">Send</button>
-    </form>
-    <p class="copyright">© All rights reserved, Hearth & Crumb | Designed by Amelia Anker</p>
-  </footer>
-</body>
+
+
+<!--Footer Section-->
+
+<footer class="footer">
+
+<div class="contact">
+
+    <div class="footer-img">
+      <img src="Image Assets/Footer.jpg" alt="Baked Items on Countertop" height="500px">
+    </div>
+
+    <!--Newsletter Form--> 
+    <div>
+        <h3>JOIN OUR NEWSLETTER</h3>
+ 
+        <form class="form" action="malito" method="post">
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="submit">
+        </form>
+        <hr>
+
+    <!--Page Links-->  
+        <h3>USEFUL LINKS</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+        <hr>
+
+    <!--Contact Information-->  
+        <h3>CONTACT US</h3>
+        <h4>PHONE NUMBER</h4>
+        <p>(123) 456 7891</p>
+        <h4>EMAIL ADDRESS</h4>
+        <p>admin@hearthandcrumb.com</p>
+        <h4>RESTAURANT</h4>
+        <p>123 Anywhere St, Any City, 1298</p>    
+        
+    <!--Social Icons-->    
+        <div class="social-icons">
+            <a target="_blank" class="social-link" href="https://instagram.com"><img src="Image Assets/instagram.png" alt="Instagram"></a>
+            <a target="_blank" class="social-link" href="https://facebook.com"><img src="Image Assets/facebook.png" alt="Facebook Icon"></a>
+            <a target="_blank" class="social-link" href="https://twitter.com"><img src="Image Assets/x.png" alt="X"></a>
+        </div>
+
+    </div>
+
+</div>
+
+    <!--All rights reserved-->  
+<div class="rights">
+       <p>&copy; ALL RIGHTS RESERVED, HEARTH AND CRUMB | WEBSITE DESIGNED BY AMELIA ANKER</p>
+</div>
+
+</footer>
+
 </html>
