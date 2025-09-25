@@ -27,25 +27,39 @@ Light Brown/Orange: #EC9150
 
 h1{
   font-family: "Antic Didone";
-  padding-left: 50px;
   color: #E9E9E7;
-
+  margin: 0;
 }
+
+.header-link {
+  text-decoration: none;  
+  color: inherit;
+  z-index: 2;          
+}
+
+.header-link:hover {
+  text-decoration: none;   
+}
+
 .slogan {
   font-family: "Bebas Neue";
   letter-spacing: 1px;
-  padding-left: 50px;
   color: #E9E9E7;
+  margin: 0;
 }
 
 .hero-banner{
-  height: 140px;
-  background-color: #281F1D;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 0;
+  position: relative;  /* do not change */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  color:#E9E9E7;
+  padding-top: 50px;
+  padding-right: 70px;
+  padding-left: 50px;
+  padding-bottom: 0;
+  gap: 0,5rem;
 }
 
 .hero-video {
@@ -110,30 +124,64 @@ a:hover {
   margin-right: auto;
 }
 
+  /*Shop Button*/
+
+.shop-btn {
+  display: block;     
+  max-width: max-content;  
+  margin-bottom: 80px;   
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 30px;             
+  background-color: #281F1D;      
+  color: #E9E9E7;                
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;         
+  text-align: center;
+  border-radius: 4px;            
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-btn:hover {
+  background-color: #3a2b28;     
+  transform: scale(1.05);         
+}
+
 /*Welcome Section Specific*/
 
 .welcome{
+  display: flex;
+  background-color:#E9E9E7;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2% 5%;
+}
+
+.welcome-grid{
   display: grid;
-  align-items: center;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr 1fr;
   max-width: 1200px;
-  margin-top: 800px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: center;
 }
 
 .welcome-img {
   height: auto;
-  width: 400px;
+  width: 100%;
   border: 2px;
   border-style: solid;
   border-color:#281F1D;
   padding: 10px;
 }
 
-.welcome-table{
-padding: 50px;
-justify-content: space-evenly;
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*Philosophy Section Specific*/
@@ -162,16 +210,102 @@ justify-content: space-evenly;
   max-width: 1200px;
 }
 
-.philosophy-img{
-  max-width: 100%;
-  max-height: auto;
+.philosophy-img {
+  width: 100%;           
+  height: 350px;        
+  object-fit: cover;    
+  display: block;        
   margin: auto;
 }
 
 .philosophy-text{
-  max-width: 80%;
   margin: auto;
   text-align: left;
+}
+
+/*Value Section Styling*/
+
+.value {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; 
+  gap: 50px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  background-color: #E9E9E7;
+  box-sizing: border-box;
+}
+
+.value-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.value-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+.value-item p {
+  margin: 10px 0 0 0;
+  color: #281F1D;
+  font-size: 0.8em;
+}
+
+.value-btn {
+  grid-column: 3; 
+  font-family: "Bebas Neue", sans-serif;
+  justify-self: right;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #281F1D;
+  color:#E9E9E7;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
+}
+
+.value-btn:hover {
+  background-color: #3a2b28;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .value {
+    grid-template-columns: 1fr;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .value-btn {
+    grid-column: 1 / -1; /
+  }
+}
+
+@media (max-width: 600px) {
+  .value-grid {
+    grid-template-columns: 1fr; 
+  }
 }
 
 /*General Styling*/
@@ -196,5 +330,18 @@ justify-content: space-evenly;
 body{
   font-size: 1.2em;
   background-color: #E9E9E7;
+  overflow-x: hidden;
 }
+
 /*Footer Section Specific*/
+
+.contact{
+  background-color: #281F1D;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; 
+  gap: 50px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
