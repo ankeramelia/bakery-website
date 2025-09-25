@@ -1,6 +1,8 @@
 /* 
 Amelia's Cheat Sheet
 
+top, right, bottom, left
+
 color codes for website:
 Dark Brown: #281F1D
 Ivory White: #E9E9E7
@@ -341,6 +343,7 @@ body{
   grid-template-columns: 1fr 1.2fr; 
   gap: 50px;
   box-sizing: border-box;
+  max-width: 1200px;
   color: #E9E9E7;
   margin: 0;
   padding: 0;
@@ -368,6 +371,7 @@ body{
   padding: 12px;
   border: none;
   border-radius: 4px;
+  background-color: #E9E9E7;
 }
 
 .form input[type=submit]{
@@ -384,7 +388,7 @@ body{
 }
 
 .form input[type="submit"]:hover{
-  background-color: #D0B9B1;
+  background-color:#D0B9B1;
   transform: scale(1.05);
 }
 
@@ -393,8 +397,7 @@ hr{
   margin: 3%;
 }
 
-/*Social Icons*/
-
+/*Useful Links*/
 .contact ul{
   list-style: none;
   padding: 0;
@@ -404,7 +407,6 @@ hr{
 .contact ul li{
 margin-bottom: 2%;
 }
-
 
 .contact ul li a{
   text-decoration: none;
@@ -418,12 +420,30 @@ margin-bottom: 2%;
   text-decoration: underline;
 }
 
+/*Contact Information*/
+
+.contact-info{
+margin-top: 5px;
+
+}
+
+.contact-info p {
+  margin: 0 0 10px 0; /*top, right, bottom, left*/
+  font-size: 0.95rem;
+}
+
+.contact-info h4 {
+  margin: 15px 0 5px;
+  font-size: 0.9rem;
+  color: #D0B9B1;
+}
+
 /*Social Icons*/
 .social-icons {
   display: flex;              
   gap: 20px;                 
   justify-content: left;          
-  margin-top: 2em;           
+  margin-top: 4em;           
 }
 
 .social-link img {
